@@ -1,0 +1,1 @@
+This folder contains the third party licenses mentioned in THIRD-PARTY-LICENSES.txt

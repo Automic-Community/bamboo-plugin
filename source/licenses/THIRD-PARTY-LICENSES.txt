@@ -1,0 +1,6 @@
+CDDL License https://spdx.org/licenses/CDDL-1.1.html THIRD-PARTY-LICENSES/LICENSE-CDDL-1.1.txt
+- com.sun.jersey              jersey-core     version 1.8
+- org.apache.axis             jersey-client   version 1.8   
+
+Apache License, Version 2.0 http://www.apache.org/licenses/LICENSE-2.0.txt THIRD-PARTY-LICENSES/apache-2.0.txt
+- com.google.code.gson        gson			  version 2.2.2-atlassian-1

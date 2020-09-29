@@ -1,0 +1,30 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+	<plugin-info>
+		<description>${project.description}</description>
+		<version>${project.version}</version>
+		<vendor name="${project.organization.name}" url="${project.organization.url}" />
+		<param name="plugin-icon">images/pluginIcon.png</param>
+		<param name="plugin-logo">images/ca.png</param>
+	</plugin-info>
+
+	<!-- add our i18n resource -->
+	<resource type="i18n" name="PluginProperties" location="PluginProperties" />
+
+
+	<taskType key="createPackageTask" name="Create CDA Package"	class="com.automic.cda.tasks.CreatePackageTask">
+		<description>Create a package in CDA server</description>
+		<category name="deployment" />
+		<configuration	class="com.automic.cda.configuration.PackageConfigurator" />
+		<resource type="freemarker" name="edit"	location="com/automic/cda/editCreatePackage.ftl" />
+		<resource type="freemarker" name="view" location="com/automic/cda/viewCreatePackage.ftl"/>
+		<resource type="download" name="icon" location="images/ca.png" />
+		<runtimeTaskDataProvider class="com.automic.cda.configuration.SharedCredentialsRuntimeDataProvider"/>
+		
+	</taskType>
+	
+	<web-resource key="create-package-resources">
+    <resource type="download" name="createPackage.js" location="js/createPackage.js"/>
+    <resource type="download" name="createPackage.css" location="css/createPackage.css"/>
+   </web-resource>
+
+</atlassian-plugin>

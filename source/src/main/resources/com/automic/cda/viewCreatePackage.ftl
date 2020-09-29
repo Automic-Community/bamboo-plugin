@@ -1,0 +1,6 @@
+[#include "/com/automic/cda/viewCdaServer.ftl"]
+[@ww.label labelKey="package.name" name="pkgName"/]
+[@ww.label labelKey="package.type" name="pkgType"/]
+[@ww.label labelKey="application.name" name="application"/]
+[@ww.label labelKey="folder.name" name="folderName" /]
+[@ww.label labelKey="owner.name" name="ownerName" /]
